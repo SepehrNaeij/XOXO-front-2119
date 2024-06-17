@@ -1,42 +1,167 @@
+
+@font-face {
+  font-family: 'EtralBold';
+  src: local('EtralBold'), 
+       url('./assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: local('Regular'), 
+       url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Light';
+  src: local('Light'), 
+       url('./assets/fonts/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: local('Bold'), 
+       url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Medium';
+  src: local('Medium'), 
+       url('./assets/fonts/Poppins-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Rubik-Medium';
+  src: local('Rubik-Medium'), 
+       url('./assets/fonts/Rubik-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik-Bold';
+  src: local('Rubik-Bold'), 
+       url('./assets/fonts/Rubik-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: local('Poppins-SemiBold'), 
+       url('../assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+:root {
+  --blueGradiant: #3b2a9f;
+  --purpleGradient: #5141aa;
+  --orange: #fa8305;
+  --brown: #1c140f;
+  --red: #CB1111;
+}
+header {
+  text-align: center;
+  font-size: 36px;
+  margin: 1rem 0;
+  align-items: center;
+  font-family: 'Bold';
+}
+
+button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+
+
+.cell.X {
+  color: var(--red);
+  font-size: 128px;
+  font-family: 'Bold';
+}
+
+.cell.O {
+  color: var(--blueGradiant);
+  font-size: 128px;
+  font-family: 'Bold';
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table, th, td {
+  border: 1px solid #000;
+  text-align: center;
+  font-family: 'Bold';
+  padding: 0.5rem;
+}
+
+body {
+  background-color: var(--blueGradiant);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white; 
+  align-items: center;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 340px;
+  justify-content: center;
+  min-height: 100vh;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+footer{
+  font-family: 'Bold';
+  color: var(--orange);
+  font-size: 20px;
+  text-align: center;
+  margin-top: 36px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+  font-family: 'Medium';
+  font-weight: bold;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+p.x{
+  font-family: 'Bold';
+  font-size: 36px;
+  margin-left: 200px;
+  margin-top: -90px;
 }
 
-.card {
-  padding: 2em;
+p.o{
+  font-family: 'Bold';
+  font-size: 36px;
+  margin-top: -90px;
 }
 
-.read-the-docs {
-  color: #888;
+h2{
+  margin-bottom: -10px;
 }
+
+
+

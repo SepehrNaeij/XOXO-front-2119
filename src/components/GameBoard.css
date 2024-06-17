@@ -1,0 +1,24 @@
+.board-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -7px;
+}
+
+.square {
+  width: 216px;
+  height: 216px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.square:last-child {
+  margin-right: 0; 
+}
+
